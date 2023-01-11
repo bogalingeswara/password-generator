@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Create a password</title>
+</head>
+
+<body>
+
+        <div class="container">
+                <div class="main">
+                        <h2>🔒 P@ssword Gener@tor 🔑</h2>
+                        <!-- section 1 -->
+                        <section class="generater-block">
+                                <h5 class="text-white mb-3">Random Password Generater</h5>
+                                <input type="text" name="password" id="" class="input form-control"
+                                        placeholder="GET YOUR PASSWORD" readonly>
+                                <div class="buttons">
+                                        <button class="btn btn-primary generateBtn">Generate</button><button
+                                                class="btn btn-warning clearBtn">Clear</button>
+                                </div>
+                        </section>
+                        <!-- section 2 -->
+                        <section class="generater-block">
+                                <h5 class="text-white mb-3">User Password Generater</h5>
+
+                                <div class="row mb-3">
+                                        <div class="col">
+                                                <input type="text" name="password" id="" class="input-user form-control"
+                                                        placeholder="Enter user name">
+                                                <small class="text-white">max-length: 6</small>
+                                        </div>
+                                        <div class="col">
+                                                <input type="number" name="password" id=""
+                                                        class="input-user-number form-control"
+                                                        placeholder="Enter number" min="1"
+                                                        onkeypress="return restrictAlphabets(event)">
+                                                <small class="text-white">max-length: 4</small>
+                                        </div>
+                                </div>
+
+                                <input type="text" name="password" id="" class="input-user-password form-control "
+                                        placeholder="GET YOUR PASSWORD" readonly>
+
+                                <div class="buttons">
+                                        <button class="btn btn-primary generateBttn">Generate</button>
+                                        <button class="btn btn-warning clearBttn">Clear</button>
+                                </div>
+
+                        </section>
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
